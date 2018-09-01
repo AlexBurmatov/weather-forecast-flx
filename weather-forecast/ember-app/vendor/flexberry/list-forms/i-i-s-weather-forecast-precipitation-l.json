@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-weather-forecast-precipitation-e",
+  "editForm": "i-i-s-weather-forecast-precipitation-e",
+  "caption": "Precipitation",
+  "name": "IISweather_forecastPrecipitationL",
+  "className": "PrecipitationL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-precipitation",
+      "modelProjection": "PrecipitationL"
+    }
+  ]
+}

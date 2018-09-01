@@ -1,0 +1,148 @@
+﻿{
+  "name": "IISweather_forecastPossibleCataclysm",
+  "modelName": "i-i-s-weather-forecast-possible-cataclysm",
+  "className": "PossibleCataclysm",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "start",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "finish",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "isArchive",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "cataclysm",
+      "relatedTo": "i-i-s-weather-forecast-cataclysm",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "dayForecast",
+      "relatedTo": "i-i-s-weather-forecast-day-forecast",
+      "inverse": "possibleCataclysm"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "PossibleCataclysmE",
+      "modelName": "i-i-s-weather-forecast-possible-cataclysm",
+      "attrs": [
+        {
+          "name": "start",
+          "caption": "Начало катаклизма",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "finish",
+          "caption": "Конец катаклизма",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Cataclysm",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "caption": "Катаклизм",
+          "name": "cataclysm",
+          "relatedTo": "i-i-s-weather-forecast-cataclysm",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "PossibleCataclysmL",
+      "modelName": "i-i-s-weather-forecast-possible-cataclysm",
+      "attrs": [
+        {
+          "name": "start",
+          "caption": "Начало катаклизма",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "finish",
+          "caption": "Конец катаклизма",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Cataclysm",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Катаклизм",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "caption": "Катаклизм",
+          "name": "cataclysm",
+          "relatedTo": "i-i-s-weather-forecast-cataclysm",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true
+}

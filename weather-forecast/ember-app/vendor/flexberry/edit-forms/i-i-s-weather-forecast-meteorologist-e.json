@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Meteorologist",
+  "name": "IISweather_forecastMeteorologistE",
+  "className": "MeteorologistE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-meteorologist",
+      "modelProjection": "MeteorologistE"
+    }
+  ]
+}

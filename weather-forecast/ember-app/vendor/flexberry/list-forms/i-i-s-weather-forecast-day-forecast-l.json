@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-weather-forecast-day-forecast-e",
+  "editForm": "i-i-s-weather-forecast-day-forecast-e",
+  "caption": "Day forecast",
+  "name": "IISweather_forecastDayForecastL",
+  "className": "DayForecastL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-day-forecast",
+      "modelProjection": "DayForecastL"
+    }
+  ]
+}

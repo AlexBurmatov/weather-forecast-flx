@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Precipitation",
+  "name": "IISweather_forecastPrecipitationE",
+  "className": "PrecipitationE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-precipitation",
+      "modelProjection": "PrecipitationE"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+﻿{
+  "applicationCaption": "Прогноз погоды",
+  "applicationTitle": "Weather forecast",
+  "items": [
+    {
+      "link": null,
+      "menuName": "прогноз-погоды",
+      "caption": "Прогноз погоды",
+      "title": "Прогноз погоды",
+      "children": [
+        {
+          "link": "i-i-s-weather-forecast-day-forecast-l",
+          "menuName": null,
+          "caption": "Дневные прогнозы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-weather-forecast-possible-cataclysm-l",
+          "menuName": null,
+          "caption": "Возможные катаклизмы",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "пользователи",
+      "caption": "Пользователи",
+      "title": "Пользователи",
+      "children": [
+        {
+          "link": "i-i-s-weather-forecast-meteorologist-l",
+          "menuName": null,
+          "caption": "Метеорологи",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-weather-forecast-subscription-l",
+          "menuName": null,
+          "caption": "Подписки на опопвещения о катаклизмах",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "справочники",
+      "caption": "Справочники",
+      "title": "Справочники",
+      "children": [
+        {
+          "link": "i-i-s-weather-forecast-region-l",
+          "menuName": null,
+          "caption": "Регионы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-weather-forecast-area-l",
+          "menuName": null,
+          "caption": "Местности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-weather-forecast-overcast-l",
+          "menuName": null,
+          "caption": "Облачности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-weather-forecast-precipitation-l",
+          "menuName": null,
+          "caption": "Осадки",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-weather-forecast-cataclysm-l",
+          "menuName": null,
+          "caption": "Катаклизмы",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

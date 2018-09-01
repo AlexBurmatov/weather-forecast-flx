@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Possible cataclysm",
+  "name": "IISweather_forecastPossibleCataclysmE",
+  "className": "PossibleCataclysmE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-possible-cataclysm",
+      "modelProjection": "PossibleCataclysmE"
+    }
+  ]
+}

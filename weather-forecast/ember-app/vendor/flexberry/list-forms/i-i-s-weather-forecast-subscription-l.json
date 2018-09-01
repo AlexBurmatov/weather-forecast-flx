@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-weather-forecast-subscription-e",
+  "editForm": "i-i-s-weather-forecast-subscription-e",
+  "caption": "Subscription",
+  "name": "IISweather_forecastSubscriptionL",
+  "className": "SubscriptionL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-subscription",
+      "modelProjection": "SubscriptionL"
+    }
+  ]
+}

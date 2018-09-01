@@ -1,0 +1,14 @@
+﻿{
+  "nameSpace": "IIS.weather_forecast",
+  "className": "WindDirection",
+  "enumObjects": {
+    "S": "Ю",
+    "SW": "ЮЗ",
+    "SE": "ЮВ",
+    "N": "С",
+    "NW": "СЗ",
+    "NE": "СВ",
+    "W": "З",
+    "E": "В"
+  }
+}

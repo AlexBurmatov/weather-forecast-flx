@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Region",
+  "name": "IISweather_forecastRegionE",
+  "className": "RegionE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-region",
+      "modelProjection": "RegionE"
+    }
+  ]
+}

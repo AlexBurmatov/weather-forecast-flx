@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-weather-forecast-area-e",
+  "editForm": "i-i-s-weather-forecast-area-e",
+  "caption": "Area",
+  "name": "IISweather_forecastAreaL",
+  "className": "AreaL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-area",
+      "modelProjection": "AreaL"
+    }
+  ]
+}

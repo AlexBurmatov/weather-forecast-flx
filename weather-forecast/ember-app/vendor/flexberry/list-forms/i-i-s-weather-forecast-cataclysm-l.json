@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-weather-forecast-cataclysm-e",
+  "editForm": "i-i-s-weather-forecast-cataclysm-e",
+  "caption": "Cataclysm",
+  "name": "IISweather_forecastCataclysmL",
+  "className": "CataclysmL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-cataclysm",
+      "modelProjection": "CataclysmL"
+    }
+  ]
+}

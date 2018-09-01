@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Overcast",
+  "name": "IISweather_forecastOvercastE",
+  "className": "OvercastE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-overcast",
+      "modelProjection": "OvercastE"
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+﻿{
+  "name": "IISweather_forecastDayForecast",
+  "modelName": "i-i-s-weather-forecast-day-forecast",
+  "className": "DayForecast",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "date",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "temperature",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "preasure",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "windDirection",
+      "type": "i-i-s-weather-forecast-wind-direction",
+      "flexberryType": "WindDirection",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "windSpeed",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "windSpeedExtrem",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "forecastInLine",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": false
+    },
+    {
+      "name": "lastEditingDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "isArchive",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "precipitation",
+      "relatedTo": "i-i-s-weather-forecast-precipitation",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "area",
+      "relatedTo": "i-i-s-weather-forecast-area",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "overcast",
+      "relatedTo": "i-i-s-weather-forecast-overcast",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "editor",
+      "relatedTo": "i-i-s-weather-forecast-meteorologist",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "possibleCataclysm",
+      "relatedTo": "i-i-s-weather-forecast-possible-cataclysm",
+      "inverse": "dayForecast"
+    }
+  ],
+  "projections": [
+    {
+      "name": "DayForecastE",
+      "modelName": "i-i-s-weather-forecast-day-forecast",
+      "attrs": [
+        {
+          "name": "date",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "temperature",
+          "caption": "Температура воздуха",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "preasure",
+          "caption": "Давление (мм рт. ст.)",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "windDirection",
+          "caption": "Направление ветра",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "windSpeed",
+          "caption": "Скорость ветра (м/с)",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "windSpeedExtrem",
+          "caption": "Скорость ветра в порывах (м/с)",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "lastEditingDate",
+          "caption": "Дата последнего изменения",
+          "hidden": false,
+          "index": 17
+        },
+        {
+          "name": "forecastInLine",
+          "caption": "Прогноз строкой",
+          "hidden": true,
+          "index": 18
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 19
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Area",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "caption": "Местность",
+          "name": "area",
+          "relatedTo": "i-i-s-weather-forecast-area",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Overcast",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "caption": "Облачность",
+          "name": "overcast",
+          "relatedTo": "i-i-s-weather-forecast-overcast",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Precipitation",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "caption": "Осадки",
+          "name": "precipitation",
+          "relatedTo": "i-i-s-weather-forecast-precipitation",
+          "inverse": null
+        },
+        {
+          "lookupValue": "FullName",
+          "lookupValueField": "fullName",
+          "relationName": "Editor",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "lastName",
+              "caption": "",
+              "hidden": true,
+              "index": 13
+            },
+            {
+              "name": "firstName",
+              "caption": "",
+              "hidden": true,
+              "index": 14
+            },
+            {
+              "name": "patronymic",
+              "caption": "",
+              "hidden": true,
+              "index": 15
+            },
+            {
+              "name": "fullName",
+              "caption": "",
+              "hidden": true,
+              "index": 16
+            }
+          ],
+          "index": 12,
+          "caption": "Сотрудник, изменивший параметры последним",
+          "name": "editor",
+          "relatedTo": "i-i-s-weather-forecast-meteorologist",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "PossibleCataclysmL",
+          "caption": "Возможные катаклизмы",
+          "name": "possibleCataclysm",
+          "relatedTo": "i-i-s-weather-forecast-possible-cataclysm",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "DayForecastL",
+      "modelName": "i-i-s-weather-forecast-day-forecast",
+      "attrs": [
+        {
+          "name": "date",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "temperature",
+          "caption": "Температура воздуха",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "preasure",
+          "caption": "Давление",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "windDirection",
+          "caption": "Направление ветра",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "windSpeed",
+          "caption": "Скорость ветра",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "windSpeedExtrem",
+          "caption": "Скорость ветра в порывах",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "lastEditingDate",
+          "caption": "Дата изменения",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "forecastInLine",
+          "caption": "Прогноз строкой",
+          "hidden": true,
+          "index": 14
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 15
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Area",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Местность",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "caption": "Местность",
+          "name": "area",
+          "relatedTo": "i-i-s-weather-forecast-area",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Overcast",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Облачность",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "caption": "Облачность",
+          "name": "overcast",
+          "relatedTo": "i-i-s-weather-forecast-overcast",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Precipitation",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Осадки",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "caption": "Осадки",
+          "name": "precipitation",
+          "relatedTo": "i-i-s-weather-forecast-precipitation",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Editor",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "fullName",
+              "caption": "Сотрудник-корректор",
+              "hidden": false,
+              "index": 9
+            },
+            {
+              "name": "lastName",
+              "caption": "",
+              "hidden": true,
+              "index": 10
+            },
+            {
+              "name": "firstName",
+              "caption": "",
+              "hidden": true,
+              "index": 11
+            },
+            {
+              "name": "patronymic",
+              "caption": "",
+              "hidden": true,
+              "index": 12
+            }
+          ],
+          "index": -1,
+          "caption": "Сотрудник-корректор",
+          "name": "editor",
+          "relatedTo": "i-i-s-weather-forecast-meteorologist",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true
+}

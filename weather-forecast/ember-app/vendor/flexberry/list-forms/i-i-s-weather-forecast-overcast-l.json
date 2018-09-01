@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-weather-forecast-overcast-e",
+  "editForm": "i-i-s-weather-forecast-overcast-e",
+  "caption": "Overcast",
+  "name": "IISweather_forecastOvercastL",
+  "className": "OvercastL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-overcast",
+      "modelProjection": "OvercastL"
+    }
+  ]
+}

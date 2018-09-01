@@ -1,0 +1,30 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Cataclysm",
+      "projection": "CataclysmL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Area",
+      "projection": "AreaL",
+      "detailModelName": null
+    }
+  ],
+  "caption": "Subscription",
+  "name": "IISweather_forecastSubscriptionE",
+  "className": "SubscriptionE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-subscription",
+      "modelProjection": "SubscriptionE"
+    }
+  ]
+}

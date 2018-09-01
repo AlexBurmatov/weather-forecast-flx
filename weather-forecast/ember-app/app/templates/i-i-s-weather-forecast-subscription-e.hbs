@@ -1,0 +1,86 @@
+<h3 class="ui header">{{t 'forms.i-i-s-weather-forecast-subscription-e.caption'}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=model.errors}}
+    </div>
+  </div>
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button type="submit" class="ui button save-button" {{action 'save'}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button type="submit" class="ui button save-del-button" {{action 'delete'}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button type="submit" class="ui button close-button" {{action 'close'}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field">
+  <label>{{t 'forms.i-i-s-weather-forecast-subscription-e.cataclysm-caption'}}</label>
+  {{
+    flexberry-lookup
+    choose='showLookupDialog'
+    remove='removeLookupValue'
+    value=model.cataclysm
+    displayAttributeName='name'
+    autocomplete=true
+    relationName='cataclysm'
+    projection='CataclysmL'
+    title=(t 'forms.i-i-s-weather-forecast-subscription-e.cataclysm-caption')
+    readonly=readonly
+  }}
+  {{flexberry-validationmessage error=model.errors.cataclysm pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-weather-forecast-subscription-e.area-caption'}}</label>
+  {{
+    flexberry-lookup
+    choose='showLookupDialog'
+    remove='removeLookupValue'
+    value=model.area
+    displayAttributeName='name'
+    autocomplete=true
+    relationName='area'
+    projection='AreaL'
+    title=(t 'forms.i-i-s-weather-forecast-subscription-e.area-caption')
+    readonly=readonly
+  }}
+  {{flexberry-validationmessage error=model.errors.area pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.email
+    class=(if model.errors.email 'error' '')
+    label=(t 'forms.i-i-s-weather-forecast-subscription-e.email-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.email pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-weather-forecast-subscription-e.timeBeforeCataclysm-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder=(t 'components.flexberry-datepicker.placeholder')
+    readonly=readonly
+    value=model.timeBeforeCataclysm
+    class=(if model.errors.timeBeforeCataclysm 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.timeBeforeCataclysm pointing="pointing"}}
+</div>
+
+</form>

@@ -1,0 +1,151 @@
+﻿{
+  "name": "IISweather_forecastMeteorologist",
+  "modelName": "i-i-s-weather-forecast-meteorologist",
+  "className": "Meteorologist",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "firstName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "lastName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "patronymic",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "fullName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": false
+    },
+    {
+      "name": "login",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "isArchive",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "MeteorologistE",
+      "modelName": "i-i-s-weather-forecast-meteorologist",
+      "attrs": [
+        {
+          "name": "lastName",
+          "caption": "Фамилия",
+          "hidden": true,
+          "index": 0
+        },
+        {
+          "name": "firstName",
+          "caption": "Имя",
+          "hidden": true,
+          "index": 1
+        },
+        {
+          "name": "patronymic",
+          "caption": "Отчество",
+          "hidden": true,
+          "index": 2
+        },
+        {
+          "name": "fullName",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "login",
+          "caption": "Логин",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "MeteorologistL",
+      "modelName": "i-i-s-weather-forecast-meteorologist",
+      "attrs": [
+        {
+          "name": "lastName",
+          "caption": "Фамилия",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "firstName",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "patronymic",
+          "caption": "Отчество",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "fullName",
+          "caption": "ФИО",
+          "hidden": true,
+          "index": 3
+        },
+        {
+          "name": "login",
+          "caption": "Логин",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true
+}

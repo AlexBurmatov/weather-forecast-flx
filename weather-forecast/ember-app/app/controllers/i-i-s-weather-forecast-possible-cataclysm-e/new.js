@@ -1,0 +1,4 @@
+import IISweather_forecastPossibleCataclysmEController from '../i-i-s-weather-forecast-possible-cataclysm-e';
+
+var IISweather_forecastPossibleCataclysmENewController = IISweather_forecastPossibleCataclysmEController;
+export default IISweather_forecastPossibleCataclysmENewController;

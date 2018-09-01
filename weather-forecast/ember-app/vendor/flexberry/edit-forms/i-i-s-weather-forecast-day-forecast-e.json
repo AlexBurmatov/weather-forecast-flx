@@ -1,0 +1,30 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Area",
+      "projection": "AreaL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Editor",
+      "projection": "MeteorologistL",
+      "detailModelName": null
+    }
+  ],
+  "caption": "Day forecast",
+  "name": "IISweather_forecastDayForecastE",
+  "className": "DayForecastE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-day-forecast",
+      "modelProjection": "DayForecastE"
+    }
+  ]
+}

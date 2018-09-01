@@ -1,0 +1,188 @@
+﻿{
+  "name": "IISweather_forecastSubscription",
+  "modelName": "i-i-s-weather-forecast-subscription",
+  "className": "Subscription",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "email",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "timeBeforeCataclysm",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "isArchive",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "area",
+      "relatedTo": "i-i-s-weather-forecast-area",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "cataclysm",
+      "relatedTo": "i-i-s-weather-forecast-cataclysm",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "SubscriptionE",
+      "modelName": "i-i-s-weather-forecast-subscription",
+      "attrs": [
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "timeBeforeCataclysm",
+          "caption": "Интервал оповещения о катаклизме",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Cataclysm",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "caption": "Катаклизм",
+          "name": "cataclysm",
+          "relatedTo": "i-i-s-weather-forecast-cataclysm",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Area",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "caption": "Местность",
+          "name": "area",
+          "relatedTo": "i-i-s-weather-forecast-area",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "SubscriptionL",
+      "modelName": "i-i-s-weather-forecast-subscription",
+      "attrs": [
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "timeBeforeCataclysm",
+          "caption": "Интервал оповещения о катаклизме",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Cataclysm",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Катаклизм",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "caption": "Катаклизм",
+          "name": "cataclysm",
+          "relatedTo": "i-i-s-weather-forecast-cataclysm",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Area",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Местность",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "caption": "Местность",
+          "name": "area",
+          "relatedTo": "i-i-s-weather-forecast-area",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true
+}

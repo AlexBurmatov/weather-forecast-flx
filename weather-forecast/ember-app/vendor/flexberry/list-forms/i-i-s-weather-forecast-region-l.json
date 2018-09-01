@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-weather-forecast-region-e",
+  "editForm": "i-i-s-weather-forecast-region-e",
+  "caption": "Region",
+  "name": "IISweather_forecastRegionL",
+  "className": "RegionL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-region",
+      "modelProjection": "RegionL"
+    }
+  ]
+}

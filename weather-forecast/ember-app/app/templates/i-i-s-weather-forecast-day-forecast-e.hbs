@@ -1,0 +1,163 @@
+<h3 class="ui header">{{t 'forms.i-i-s-weather-forecast-day-forecast-e.caption'}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=model.errors}}
+    </div>
+  </div>
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button type="submit" class="ui button save-button" {{action 'save'}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button type="submit" class="ui button save-del-button" {{action 'delete'}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button type="submit" class="ui button close-button" {{action 'close'}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field">
+  <label>{{t 'forms.i-i-s-weather-forecast-day-forecast-e.date-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder=(t 'components.flexberry-datepicker.placeholder')
+    readonly=readonly
+    value=model.date
+    class=(if model.errors.date 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.date pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-weather-forecast-day-forecast-e.area-caption'}}</label>
+  {{
+    flexberry-lookup
+    choose='showLookupDialog'
+    remove='removeLookupValue'
+    value=model.area
+    displayAttributeName='name'
+    autocomplete=true
+    relationName='area'
+    projection='AreaL'
+    title=(t 'forms.i-i-s-weather-forecast-day-forecast-e.area-caption')
+    readonly=readonly
+  }}
+  {{flexberry-validationmessage error=model.errors.area pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.temperature
+    class=(if model.errors.temperature 'error' '')
+    label=(t 'forms.i-i-s-weather-forecast-day-forecast-e.temperature-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.temperature pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.preasure
+    class=(if model.errors.preasure 'error' '')
+    label=(t 'forms.i-i-s-weather-forecast-day-forecast-e.preasure-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.preasure pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-weather-forecast-day-forecast-e.windDirection-caption'}}</label>
+  {{
+    flexberry-dropdown
+    items=(flexberry-enum 'i-i-s-weather-forecast-wind-direction')
+    value=model.windDirection
+    readonly=readonly
+  }}
+  {{flexberry-validationmessage error=model.errors.windDirection pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.windSpeed
+    class=(if model.errors.windSpeed 'error' '')
+    label=(t 'forms.i-i-s-weather-forecast-day-forecast-e.windSpeed-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.windSpeed pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.windSpeedExtrem
+    class=(if model.errors.windSpeedExtrem 'error' '')
+    label=(t 'forms.i-i-s-weather-forecast-day-forecast-e.windSpeedExtrem-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.windSpeedExtrem pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-weather-forecast-day-forecast-e.editor-caption'}}</label>
+  {{
+    flexberry-lookup
+    choose='showLookupDialog'
+    remove='removeLookupValue'
+    value=model.editor
+    displayAttributeName='fullName'
+    autocomplete=true
+    relationName='editor'
+    projection='MeteorologistL'
+    title=(t 'forms.i-i-s-weather-forecast-day-forecast-e.editor-caption')
+    readonly=readonly
+  }}
+  {{flexberry-validationmessage error=model.errors.editor pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-weather-forecast-day-forecast-e.lastEditingDate-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder=(t 'components.flexberry-datepicker.placeholder')
+    readonly=readonly
+    value=model.lastEditingDate
+    class=(if model.errors.lastEditingDate 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.lastEditingDate pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.i-i-s-weather-forecast-day-forecast-e.possibleCataclysm-caption'}}</label>
+  {{
+    flexberry-groupedit
+    componentName="possibleCataclysmGroupEdit"
+    mainModelProjection=modelProjection
+    modelProjection=modelProjection.attributes.possibleCataclysm
+    content=model.possibleCataclysm
+    readonly=readonly
+    orderable=false
+    class=(if model.errors.possibleCataclysm 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.possibleCataclysm pointing="pointing"}}
+</div>
+
+</form>

@@ -1,0 +1,91 @@
+﻿{
+  "name": "IISweather_forecastRegion",
+  "modelName": "i-i-s-weather-forecast-region",
+  "className": "Region",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "isArchive",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "RegionE",
+      "modelName": "i-i-s-weather-forecast-region",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Идентификатор",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "RegionL",
+      "modelName": "i-i-s-weather-forecast-region",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Идентификатор",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "isArchive",
+          "caption": "Архивный",
+          "hidden": true,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true
+}

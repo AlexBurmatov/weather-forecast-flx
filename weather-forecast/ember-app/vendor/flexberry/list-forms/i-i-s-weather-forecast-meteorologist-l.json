@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-weather-forecast-meteorologist-e",
+  "editForm": "i-i-s-weather-forecast-meteorologist-e",
+  "caption": "Meteorologist",
+  "name": "IISweather_forecastMeteorologistL",
+  "className": "MeteorologistL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-weather-forecast-meteorologist",
+      "modelProjection": "MeteorologistL"
+    }
+  ]
+}
