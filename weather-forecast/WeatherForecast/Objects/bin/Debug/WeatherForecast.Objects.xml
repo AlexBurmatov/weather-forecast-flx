@@ -1,0 +1,449 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WeatherForecast.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.WeatherForecast.Region">
+            <summary>
+            Region.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Region.Id">
+            <summary>
+            Id.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Region.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Region.IsArchive">
+            <summary>
+            IsArchive.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Region.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Region.Views.RegionE">
+            <summary>
+            "RegionE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Region.Views.RegionL">
+            <summary>
+            "RegionL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Precipitation">
+            <summary>
+            Precipitation.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Precipitation.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Precipitation.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Precipitation.Views.PrecipitationE">
+            <summary>
+            "PrecipitationE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Precipitation.Views.PrecipitationL">
+            <summary>
+            "PrecipitationL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Subscription">
+            <summary>
+            Subscription.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Subscription.Email">
+            <summary>
+            Email.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Subscription.TimeBeforeCataclysm">
+            <summary>
+            TimeBeforeCataclysm.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Subscription.IsArchive">
+            <summary>
+            IsArchive.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Subscription.Area">
+            <summary>
+            Subscription.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Subscription.Cataclysm">
+            <summary>
+            Subscription.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Subscription.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Subscription.Views.SubscriptionE">
+            <summary>
+            "SubscriptionE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Subscription.Views.SubscriptionL">
+            <summary>
+            "SubscriptionL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.WindDirection">
+            <summary>
+            Wind direction.
+            </summary>
+        </member>
+        <member name="F:IIS.WeatherForecast.WindDirection.S">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.WeatherForecast.WindDirection.SW">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.WeatherForecast.WindDirection.SE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.WeatherForecast.WindDirection.N">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.WeatherForecast.WindDirection.NW">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.WeatherForecast.WindDirection.NE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.WeatherForecast.WindDirection.W">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.WeatherForecast.WindDirection.E">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.DayForecast">
+            <summary>
+            Day forecast.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.Date">
+            <summary>
+            Date.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.Temperature">
+            <summary>
+            Temperature.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.Preasure">
+            <summary>
+            Preasure.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.WindDirection">
+            <summary>
+            WindDirection.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.WindSpeed">
+            <summary>
+            WindSpeed.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.WindSpeedExtrem">
+            <summary>
+            WindSpeedExtrem.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.ForecastInLine">
+            <summary>
+            ForecastInLine.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.LastEditingDate">
+            <summary>
+            LastEditingDate.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.IsArchive">
+            <summary>
+            IsArchive.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.Precipitation">
+            <summary>
+            Day forecast.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.Area">
+            <summary>
+            Day forecast.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.Overcast">
+            <summary>
+            Day forecast.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.Editor">
+            <summary>
+            Day forecast.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.PossibleCataclysm">
+            <summary>
+            Day forecast.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.DayForecast.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.Views.DayForecastE">
+            <summary>
+            "DayForecastE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.DayForecast.Views.DayForecastL">
+            <summary>
+            "DayForecastL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.PossibleCataclysm">
+            <summary>
+            Possible cataclysm.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.PossibleCataclysm.Start">
+            <summary>
+            Start.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.PossibleCataclysm.Finish">
+            <summary>
+            Finish.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.PossibleCataclysm.IsArchive">
+            <summary>
+            IsArchive.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.PossibleCataclysm.Cataclysm">
+            <summary>
+            Possible cataclysm.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.PossibleCataclysm.DayForecast">
+            <summary>
+            мастеровая ссылка на шапку IIS.WeatherForecast.DayForecast.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.PossibleCataclysm.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.PossibleCataclysm.Views.PossibleCataclysmE">
+            <summary>
+            "PossibleCataclysmE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.PossibleCataclysm.Views.PossibleCataclysmL">
+            <summary>
+            "PossibleCataclysmL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.DetailArrayOfPossibleCataclysm">
+            <summary>
+            Detail array of PossibleCataclysm.
+            </summary>
+        </member>
+        <member name="M:IIS.WeatherForecast.DetailArrayOfPossibleCataclysm.#ctor(IIS.WeatherForecast.DayForecast)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type PossibleCataclysm by index.
+            </summary>
+            <summary>
+            Adds object with type PossibleCataclysm.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Meteorologist">
+            <summary>
+            Meteorologist.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Meteorologist.FirstName">
+            <summary>
+            FirstName.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Meteorologist.LastName">
+            <summary>
+            LastName.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Meteorologist.Patronymic">
+            <summary>
+            Patronymic.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Meteorologist.FullName">
+            <summary>
+            FullName.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Meteorologist.Login">
+            <summary>
+            Login.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Meteorologist.IsArchive">
+            <summary>
+            IsArchive.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Meteorologist.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Meteorologist.Views.MeteorologistE">
+            <summary>
+            "MeteorologistE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Meteorologist.Views.MeteorologistL">
+            <summary>
+            "MeteorologistL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Area">
+            <summary>
+            Area.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Area.Id">
+            <summary>
+            Id.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Area.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Area.IsArchive">
+            <summary>
+            IsArchive.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Area.Region">
+            <summary>
+            Area.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Area.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Area.Views.AreaE">
+            <summary>
+            "AreaE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Area.Views.AreaL">
+            <summary>
+            "AreaL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Overcast">
+            <summary>
+            Overcast.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Overcast.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Overcast.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Overcast.Views.OvercastE">
+            <summary>
+            "OvercastE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Overcast.Views.OvercastL">
+            <summary>
+            "OvercastL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Cataclysm">
+            <summary>
+            Cataclysm.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Cataclysm.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.Cataclysm.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Cataclysm.Views.CataclysmE">
+            <summary>
+            "CataclysmE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.WeatherForecast.Cataclysm.Views.CataclysmL">
+            <summary>
+            "CataclysmL" view.
+            </summary>
+        </member>
+    </members>
+</doc>

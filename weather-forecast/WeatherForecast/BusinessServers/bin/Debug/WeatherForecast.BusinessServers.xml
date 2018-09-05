@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WeatherForecast.BusinessServers</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.WeatherForecast.ArchiverBS">
+            <summary>
+            Archiver BS.
+            </summary>
+        </member>
+        <member name="T:IIS.WeatherForecast.DayForecastBS">
+            <summary>
+            Day forecast BS.
+            </summary>
+        </member>
+    </members>
+</doc>
